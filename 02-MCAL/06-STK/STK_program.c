@@ -74,6 +74,7 @@ void STK_voidStopTimer(void)
 
 u32 STK_u32GetElapsedTime(void)
 {
+	/*return time*/
 	return ((STK->LOAD)-(STK->VAL));
 }
 u32 STK_u32GetRemaningTime(void)
