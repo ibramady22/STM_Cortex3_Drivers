@@ -1,0 +1,4 @@
+../03-HAL/03-LEDMRX/LEDMRX_program.c:18:6:LEDMRX_voidInit	8	static
+../03-HAL/03-LEDMRX/LEDMRX_program.c:41:6:LEDMRX_voidDisplay	16	static
+../03-HAL/03-LEDMRX/LEDMRX_program.c:85:13:DisableAllCol	8	static
+../03-HAL/03-LEDMRX/LEDMRX_program.c:97:13:SetRowVal	24	static

@@ -1,0 +1,3 @@
+IR_program.c:28:6:IR_voidTakeAction	6
+IR_program.c:50:6:IR_voidGetFrame	2
+IR_program.c:68:6:IR_voidInit	1
