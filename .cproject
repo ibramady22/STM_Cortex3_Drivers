@@ -43,6 +43,7 @@
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.260156717" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;D:\Embedded Systems\AbdelBasit\ARM Cortex-M3 (Assaf)\SYSTEM\STM_DRIVERS\03-HAL&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\Embedded Systems\AbdelBasit\ARM Cortex-M3 (Assaf)\SYSTEM\STM_DRIVERS\02-MCAL\07-DMA&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\Embedded Systems\AbdelBasit\ARM Cortex-M3 (Assaf)\SYSTEM\STM_DRIVERS\03-HAL\04-IR&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\Embedded Systems\AbdelBasit\ARM Cortex-M3 (Assaf)\SYSTEM\STM_DRIVERS\03-HAL\03-LEDMRX&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\Embedded Systems\AbdelBasit\ARM Cortex-M3 (Assaf)\SYSTEM\STM_DRIVERS\03-HAL\01-LED&quot;"/>

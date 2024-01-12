@@ -1,0 +1,9 @@
+../02-MCAL/07-DMA/DMA_program.c:19:6:DMA_voidSetConfiguration	16	static
+../02-MCAL/07-DMA/DMA_program.c:52:6:DMA_voidDMAEnable	16	static
+../02-MCAL/07-DMA/DMA_program.c:63:6:DMA_voidDMADisable	16	static
+../02-MCAL/07-DMA/DMA_program.c:68:6:DMA_voidInterruptEnable	16	static
+../02-MCAL/07-DMA/DMA_program.c:75:6:DMA_voidSetAddress	24	static
+../02-MCAL/07-DMA/DMA_program.c:84:6:DMA_voidClearFlag	16	static
+../02-MCAL/07-DMA/DMA_program.c:88:4:DMA_u8GetFlag	24	static
+../02-MCAL/07-DMA/DMA_program.c:94:6:DMA_voidSetCallback	16	static
+../02-MCAL/07-DMA/DMA_program.c:99:6:DMA1_Channel1_IRQHandler	8	static

@@ -11,6 +11,7 @@
 #include "SEV_SEGMENT_interface.h"
 #include "LEDMRX_interface.h"
 #include "IR_interface.h"
+#include "DMA_interface.h"
 
 #include "../03-HAL/01-LED/LED_interface.h"
 #include "../03-HAL/02-SEV_SEGMENT/SEV_SEGMENT_interface.h"
@@ -24,7 +25,7 @@
 
 int main(void)
 {
-
+	DMA_voidDMADisable(0);
 	SEV_SEGMENT_voidDisplay(8);
 	RCC_InitSysClock();
 	/* Enable RCC for GPIOA peripheral  */
