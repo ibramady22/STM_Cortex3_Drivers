@@ -11,10 +11,13 @@ RM := rm -rf
 -include sources.mk
 -include Startup/subdir.mk
 -include Src/subdir.mk
+-include 03-HAL/05-STP/subdir.mk
 -include 03-HAL/04-IR/subdir.mk
 -include 03-HAL/03-LEDMRX/subdir.mk
 -include 03-HAL/02-SEV_SEGMENT/subdir.mk
 -include 03-HAL/01-LED/subdir.mk
+-include 02-MCAL/09-UART/subdir.mk
+-include 02-MCAL/08-SPI/subdir.mk
 -include 02-MCAL/07-DMA/subdir.mk
 -include 02-MCAL/06-STK/subdir.mk
 -include 02-MCAL/05-AFIO/subdir.mk

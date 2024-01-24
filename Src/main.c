@@ -12,55 +12,32 @@
 #include "LEDMRX_interface.h"
 #include "IR_interface.h"
 #include "DMA_interface.h"
-
-#include "../03-HAL/01-LED/LED_interface.h"
-#include "../03-HAL/02-SEV_SEGMENT/SEV_SEGMENT_interface.h"
+#include "STP_interface.h"
 
 
 
-//#if !defined(__SOFT_FP__) && defined(__ARM_FP)
-//  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-//#endif
 
 
 int main(void)
 {
-	DMA_voidDMADisable(0);
-	SEV_SEGMENT_voidDisplay(8);
+	/* Clock Initialisation */
 	RCC_InitSysClock();
-	/* Enable RCC for GPIOA peripheral  */
-	RCC_voidEnableClock(RCC_APB2, 2);
-	/* Enable RCC for GPIOB peripheral */
+	RCC_voidEnableClock(RCC_APB2, 2); /* Enable RCC for GPIOA */
 	RCC_voidEnableClock(RCC_APB2, 3);
-	/* Enable RCC for GPIOC peripheral */
-	RCC_voidEnableClock(RCC_APB2, 4);
-	NVIC_voidEnableInterrupt(1);
-
+	/* Pin Directions */
+	GPIO_voidSetPinDirection(GPIOA, PIN0, OUTPUT_2MHZ_PUSH_PULL);
 	GPIO_voidSetPinDirection(GPIOA, PIN1, OUTPUT_2MHZ_PUSH_PULL);
+	GPIO_voidSetPinDirection(GPIOA, PIN2, OUTPUT_2MHZ_PUSH_PULL);
 
-	u16 w=1000;
-    /* Loop forever */
-	LED_voidOn(LED_1);
-	SEV_SEGMENT_voidDisplay(2);
+	/* Timer Initialisation */
+	STK_voidInit();
+
+	/* Test serial to parallel Driver */
+	STP_voidSendDataSynchronous(0xAA); //0b10101010
+
 	while(1)
 	{
-		GPIO_voidSetPinVal(GPIOA, PIN1, GPIO_HIGH);
-		for(u16 i=0;i<w;i++)
-		{
-			for(u16 j=0;i<w;j++)
-			{
-				asm("NOP");
-			}
-		}
-		//GPIO_voidSetPinVal(GPIOA, PIN0, GPIO_LOW);
-		for(u16 i=0;i<w;i++)
-				{
-					for(u16 j=0;i<w;j++)
-					{
-						asm("NOP");
-					}
-				}
+		/* Enter your Runnable Code */
 	}
-
 	return 0;
 }

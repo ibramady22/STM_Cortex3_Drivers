@@ -1,0 +1,5 @@
+../02-MCAL/08-SPI/SPI-program.c:20:6:SPI1_voidInit	4	static
+../02-MCAL/08-SPI/SPI-program.c:50:6:SPI1_voidSendReceiveSunc	16	static
+../02-MCAL/08-SPI/SPI-program.c:64:6:SPI1_voidInterrupt	16	static
+../02-MCAL/08-SPI/SPI-program.c:69:6:SPI1_voidSendReceiveAsync	16	static
+../02-MCAL/08-SPI/SPI-program.c:78:6:SPI1_IRQHandler	8	static

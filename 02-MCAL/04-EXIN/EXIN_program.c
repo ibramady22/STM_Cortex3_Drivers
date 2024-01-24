@@ -16,7 +16,7 @@ void (*EXTI0_CallBack) (void);
 
 void EXIN_voidInit()
 {
-
+/* Do nothing*/
 }
 void EXIN_voidEnableEXIN(EXIN_LINE_t Copy_EXIN_LINE_t ,EXIN_MODE_t Copy_EXIN_MODE_t )
 {
